@@ -16,3 +16,12 @@ OPENID_PROVIDERS = [
 # Migration management
 SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'app.db')
 SQLALCHEMY_MIGRATE_REPO = os.path.join(basedir, 'migrations')
+
+# Mail Server settings
+MAIL_SERVER = 'localhost'
+MAIL_PORT = 25
+MAIL_USERNAME = None
+MAIL_PASSWORD = None
+
+# Administrator list
+ADMINS = ['you@example.com']
